@@ -73,6 +73,14 @@ header .container nav .reducedNav {
     display: none;
 }
 
+header .container nav .reducedNav img {
+    width: 1.3rem;
+}
+
+header .container nav .reducedNav:hover{
+    background-color: var(--color-LightGrey);
+}
+
 header .container .logo {
     color: var(--color-DarkGrey);
 }
@@ -281,9 +289,13 @@ footer {
 
 @media (max-width: 1024px) {
 
+    .container {
+        width: 90%;
+    }
+
     header .container nav .fullNav {
         display: none;
-    }
+=    }
 
     header .container nav .reducedNav {
         display: block;
@@ -291,6 +303,7 @@ footer {
 
     .cardContainer {
         flex-direction: row;
+        width: 90%;
         height: auto;
     }
 
