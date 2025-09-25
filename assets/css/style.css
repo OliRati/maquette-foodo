@@ -54,19 +54,23 @@ header .container {
     padding: 1rem 0;
 }
 
-header .container nav a {
+header .container nav .fullNav a {
     text-decoration: none;
     color: var(--color-DarkGrey);
     padding: 0.5rem;
 }
 
-header .container nav a:hover {
+header .container nav .fullNav a:hover {
     color: black;
     background-color: var(--color-LightGrey);
 }
 
-header .container nav ul {
+header .container nav .fullNav {
     display: flex;
+}
+
+header .container nav .reducedNav {
+    display: none;
 }
 
 header .container .logo {
@@ -276,6 +280,14 @@ footer {
 }
 
 @media (max-width: 1024px) {
+
+    header .container nav .fullNav {
+        display: none;
+    }
+
+    header .container nav .reducedNav {
+        display: block;
+    }
 
     .cardContainer {
         flex-direction: row;
