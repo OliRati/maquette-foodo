@@ -71,13 +71,14 @@ header .container nav .fullNav {
 
 header .container nav .reducedNav {
     display: none;
+    cursor: pointer;
 }
 
 header .container nav .reducedNav img {
     width: 1.3rem;
 }
 
-header .container nav .reducedNav:hover{
+header .container nav .reducedNav:hover {
     background-color: var(--color-LightGrey);
 }
 
@@ -89,6 +90,7 @@ header .container .logo {
 
 .hero {
     background-image: url("../img/home-bg.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
