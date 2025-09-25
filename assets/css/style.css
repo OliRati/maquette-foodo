@@ -274,3 +274,23 @@ footer {
     text-align: center;
     padding: 3rem;
 }
+
+@media (max-width: 1024px) {
+
+    .cardContainer {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .cardContainer .card {
+        width: 100%;
+    }
+
+    .specialMenu .menulist {
+        flex-direction: column;
+    }
+    .specialMenu .menulistLeft,
+    .specialMenu .menulistRight {
+        width: 100%;
+    }
+}
