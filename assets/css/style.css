@@ -284,6 +284,7 @@ footer {
 
     .cardContainer .card {
         width: 100%;
+        margin-bottom: 3rem;
     }
 
     .specialMenu .menulist {
@@ -292,5 +293,14 @@ footer {
     .specialMenu .menulistLeft,
     .specialMenu .menulistRight {
         width: 100%;
+    }
+
+    .contact form .nameEmail {
+        flex-direction: column;
+    }
+
+    .contact form .nameEmail input {
+        width: 100%;
+        margin: 0.5rem 0;
     }
 }
