@@ -1,0 +1,242 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Get custom font */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/* Set custom colors */
+
+:root {
+    --color-LightGrey: #F0F0F0;
+    --color-MediumGrey: #5C5C5C;
+    --color-DarkGrey: #343434;
+}
+
+.body {
+    font-family: 'Roboto';
+    inherits: font;
+}
+
+/* Header menu */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hero section */
+
+.hero {
+    background-image: url("../img/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 10rem;
+    transform: translate( -50%, -50%);
+}
+
+.overlay h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.overlay p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.overlay a {
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.overlay a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Card gallery section */
+
+.cardContainer {
+    width: 80%;
+    height: 400px;
+    margin: 4rem auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+}
+
+.cardContainer .card {
+    width: 30%;
+}
+
+.cardContainer .card h3 {
+    font-weight: 700;
+}
+
+.cardContainer .card p {
+    font-size: 0.8rem;
+}
+
+.specialMenu,
+.contact {
+    background-color: var(--color-LightGrey);
+}
+
+/* Special menu section */
+
+.specialMenu .menulist {
+    display: flex;
+    margin: 4rem auto;
+    width: 80%;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.menulistLeft,
+.menulistRight
+{
+    width: 43%;
+}
+
+.menuItem {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.containerNamePrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.menuName,
+.menuPrice {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.menuName {
+    padding-right: 0.3rem;
+}
+
+.menuPrice {
+    padding-left: 0.3rem;
+}
+
+.spacer {
+    flex-grow: 1;
+    height: 0.9rem;
+    border-bottom: 3px dotted #000;
+}
+
+.menuIngredients {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+/* Contact section */
+
+.gallery h2,
+.contact h2,
+.specialMenu h2 {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.gallery hr,
+.contact hr,
+.specialMenu hr {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.contact form {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.contact form .nameEmail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.contact form .nameEmail input {
+    width: 49%;
+    padding: 0.5rem
+}
+
+.contact input,
+.contact textarea {
+    border: 0;
+    padding: 0.5rem;
+}
+
+.contact input[type="submit"] {
+    border: 2px solid black;
+    padding: 0.5rem 6rem;
+    margin: 0.5rem auto;
+}
+
+.contact textarea {
+    width: 100%;
+}
+
+/* Footer section */
+
+footer {
+    background-color: var(--color-MediumGrey);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
